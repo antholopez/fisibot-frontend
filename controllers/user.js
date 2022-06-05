@@ -85,9 +85,9 @@ exports.postLogin = (req, res, next) => {
       req.flash('errors', info);
       return res.redirect('/login');
     }
-    req.logIn(user, (err) => {
-      if (err) { return next(err); }
-      req.flash('success', { msg: 'Success! You are logged in.' });
+    req.logIn(user, (error) => {
+      if (error) { return next(error); }
+      req.flash('success', { msg: '!Éxito¡ Has iniciado sesión correctamente.' });
       res.redirect(req.session.returnTo || '/');
     });
   })(req, res, next);
