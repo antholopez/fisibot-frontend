@@ -16313,3 +16313,7 @@ readers do not read off random characters that represent icons */
   color: #FFF !important; }
   .btn-twitch:hover, .btn-twitch:active {
     background-color: #503484; }
+
+.login-image {
+  width: 30px;
+  height: 24px; }

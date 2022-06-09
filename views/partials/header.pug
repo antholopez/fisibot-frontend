@@ -47,10 +47,10 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
     #navbarColor01.collapse.navbar-collapse
       ul.navbar-nav.me-auto.mb-2.mb-lg-0
         li.nav-item
-          a.nav-link(class=(title === 'Home') ? 'active' : '')(href='/') Home
-        li.nav-item
+          a.nav-link(class=(title === 'Home') ? 'active' : '')(href='/') Inicio
+        //- li.nav-item
           a.nav-link(class=(title === 'API Examples') ? 'active' : '')(href='/api') API Examples
-        li.nav-item
+        //- li.nav-item
           a.nav-link(class=(title === 'Contact') ? 'active' : '')(href='/contact') Contact
 
       form.d-flex
@@ -58,6 +58,6 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
           a.btn.btn-outline-light.me-2(href='/login') Login
           //- a.btn.btn-primary(href='/signup') Create Account
         else
-          a.btn.btn-primary.me-2(href='/account') My Account
-          a.btn.btn-outline-danger(href='/logout') Sign out
+          a.btn.btn-primary.me-2(href='/account') Mi perfil
+          a.btn.btn-outline-danger(href='/logout') Cerrar sesión
 
